@@ -19,3 +19,11 @@ const driversByName = function(drivers) {
     return driver1.name.localCompare(driver2.name);
   })
 }
+
+const totalRevenue = function(drivers) {
+  let total = 0;
+  drivers.forEach(function(driver) {
+    total += driver.revenue;
+  })
+  return total;
+}
